@@ -1,0 +1,331 @@
+/* General Styles */
+body {
+    font-family:'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    color: #6b711d;
+    background-color: rgb(228, 235, 209);
+    overflow-x: hidden;
+}
+
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('broun.png') no-repeat center center/cover;
+    color: white;
+    margin-bottom: -50zpx;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.hero .link-button {
+    font-size: 18px;
+    padding: 15px 30px;
+    background-color: hwb(89 69% 13%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.hero button:hover {
+    background-color: #007A54;
+}
+
+/*Educational Resources Section*/
+.resources {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: auto;
+    background-color: #0b4a2b;
+    padding: 60px 20px;
+    border: 10px solid #0b4a2b;
+    margin-top: 0px;
+}
+
+/* Introduction Section */
+.intro {
+    text-align: center;
+    padding: 30px 200px;
+    font-family:'Courier New', Courier, monospace
+    
+}
+
+.intro-text {
+    font-size: 20px;
+    color: #6b711d;
+    margin-bottom: 80px;
+    margin-top: -70px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-grid{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image-box {
+    position: relative;
+    width: 70%;
+}
+
+.grid-image {
+    width: 100%;
+    height: 300px;
+    display: block;
+    border-radius: 5px;
+    background: url('picking.jpeg')
+    
+}
+
+.image-text {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-family:'Courier New', Courier, monospace
+}
+
+.image-text h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.image-text a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+.image-content {
+    width: -100px; /* Adjust this value as needed */
+}
+
+.image-content img {
+    max-width: 550px;
+    height: auto;
+    border-radius: 20px; 
+}
+
+
+
+/*filling Resources Section*/
+.filling {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.groins-content {
+   
+    width: 60%; /* Adjust this value as needed */
+    text-align: left;
+    padding-right: -20%;
+}
+
+.photo-content {
+    width: 350px; /* Adjust this value as needed */
+   
+}
+
+.photo-content img {
+    max-width: 450px;
+    height: auto;
+    border-radius: 20px; 
+    
+   
+}
+
+/* INNERS Resources Section */
+.inners {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; /* Add padding around the section */
+    flex-direction: row-reverse; /* Reverse the order to place image on the right */
+   
+}
+
+.pix-content {
+    width: 40%; /* Adjust this value to control the image width */
+    text-align: right;
+}
+
+.pix-content img {
+    max-width: 90%; /* Ensures the image doesn't overflow */
+    height: auto;
+    border-radius: 20px;
+    
+}
+
+.jeroan-content {
+    width: 55%; /* Adjust this value as needed */
+    text-align: right;
+}
+
+/* Community Engagement Section */
+.community {
+    background-color: #0b4a2b;; /* Green background */
+    color: white; /* White text for readability */
+    padding: 20px; /* Add padding to create space inside the container */
+    margin: -100% ;
+    border: 90px solid #0b4a2b;;
+}
+
+.community h2 {
+    color: #ffffff; /* Ensure the header text is white */
+}
+
+.community p {
+    color: #f1f1f1; /* Lighten the paragraph text a little */
+}
+
+.community ul li a {
+    color: #fff; /* Links in white */
+    text-decoration: none;
+}
+
+.community ul li a:hover {
+    color: #ffeb3b; /* Yellow on hover */
+    text-decoration: underline;
+}
+
+
+/* Section Styles */
+.container {
+    padding: 60px 20px;
+    text-align: center;
+   margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+/*untuk menghilangkan titik di samping samping list */
+
+ul {
+    list-style-type: none ;
+    padding-left:  0;
+}
+
+ul il {
+    margin-bottom: 10 px;
+}
+
+
+
+.section-image {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.news {
+    text-align: center;
+    padding: 20px;
+}
+
+.blog-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 20px; /* Space between the grid items */
+}
+
+.blog-wrapper img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: rounded corners */
+}
+
+.blog-wrapper h3 {
+    font-size: 1.2em;
+    margin: 10px 0 5px;
+}
+
+.blog-wrapper p {
+    font-size: 0.95em;
+    color: #666;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: hwb(89 69% 13%);
+    color: #777;
+}
+
+footer a {
+    color: #00A86B;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #007A54;
+}
+
+.fade-title {
+    opacity: 0; /* Start hidden */
+    transition: opacity 1s ease; /* Transition effect */
+}
+
+.fade-title.visible {
+    opacity: 1; /* Fully visible */
+}
+
+/* Change default link color */
+a {
+    color: hwb(89 69% 13%); /* Your desired color for the link */
+    text-decoration: none; /* Optional: Remove underline */
+}
+
+/* Change link color on hover */
+a:hover {
+    color: #a08776; /* Color when hovered */
+    text-decoration: underline; /* Optional: Add underline on hover */
+}
+
+/* Change visited link color */
+a:visited {
+    color: #b8a9c6; /* Color for visited links */
+}
+
+/* Change active link color */
+a:active {
+    color: #d32f2f; /* Color for active (clicked) link */
+}

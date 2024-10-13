@@ -1,0 +1,56 @@
+
+/* Navbar styling */
+
+
+
+
+.navbar {
+    background-color: hwb(89 69% 13%);
+    position: fixed;
+    top: 0;
+    left: 0; /* Aligns the navbar to the left */
+    width: 100%; /* Full width */
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(227, 116, 116, 0.1);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.logo {
+    margin-right: auto; /* Pushes the logo to the far left */
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(141, 125, 102);
+    padding-left: 100px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Align to the left */
+    padding-left: 20px;
+}
+
+.navbar ul li {
+    padding: 21px 10px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #47bd19;
+    color: #00A86B; /* Eco-friendly green theme */
+}
+
+/* Space below navbar to avoid overlap with content */
+body {
+    margin-top: 60px;
+}

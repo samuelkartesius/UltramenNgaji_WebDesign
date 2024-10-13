@@ -1,0 +1,64 @@
+/* Global body styling */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure the body and html take the full height of the viewport */
+    display: flex;
+    flex-direction: column; /* Flexbox to arrange the content vertically */
+}
+
+/* Body content should take the remaining space, pushing the footer down */
+.contact.container {
+    flex: 1; /* This allows the content to take up the remaining space */
+    padding: 100px 20px;
+    text-align: center;
+}
+
+/* Content wrapper styling */
+.content-wrapper {
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    max-width: 500px;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #00A86B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+form button:hover {
+    background-color: #007A54;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: hwb(89 69% 13%); /* Transparent background */
+    color: white;
+    width: 100%;
+    position: relative;
+    margin-top: auto; /* Ensures the footer stays at the bottom */
+}

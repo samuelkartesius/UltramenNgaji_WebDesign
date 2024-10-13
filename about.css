@@ -1,0 +1,104 @@
+.about.container {
+    padding: 200px 20px; /* Increased top padding to lower the image */
+    text-align: center;
+    position: relative; /* Enables positioning of the overlay */
+    background-image: url('dadaonan.jpeg'); /* Replace with your image path */
+    background-size: cover; /* Covers the entire container */
+    background-position: center; /* Centers the image */
+    color: rgb(90, 90, 9); /* Change text color for better contrast */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.about.container::before {
+    content: "";
+    position: absolute; /* Position it absolutely */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; /* Cover the entire container */
+    background: rgba(255, 255, 255, 0.5); /* Semi-transparent white overlay */
+    z-index: 0; /* Ensure it is below the text */
+}
+
+.about.container h1 {
+    font-size: 48px; /* Increased font size for the heading */
+    margin-bottom: 38px; /* Space below the heading */
+    position: relative; /* Allows layering text over background */
+    z-index: 1; /* Ensures text appears above the overlay */
+}
+
+.about.container p {
+    font-size: 20px; /* Increased font size for the paragraph */
+    line-height: 1.6; /* Improved line height for readability */
+    position: relative; /* For layering purposes */
+    z-index: 1; /* Ensures text appears above the overlay */
+}
+
+.content-wrapper {
+    max-width: 800px; /* Control the width of the content */
+    margin: auto; /* Center the content */
+}
+
+
+
+
+/* Community Engagement Section */
+.community {
+    background-color: #2e8c85; /* Green background */
+    color: white; /* White text for readability */
+    padding: 20px; /* Add padding to create space inside the container */
+    margin: -100% ;
+    border: 120px solid #2e8c85;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.community h2 {
+    color: #ffffff; /* Ensure the header text is white */
+}
+
+.community p {
+    color: #f1f1f1; /* Lighten the paragraph text a little */
+}
+
+.community ul li a {
+    color: #fff; /* Links in white */
+    text-decoration: none;
+}
+
+.community ul li a:hover {
+    color: #ffeb3b; /* Yellow on hover */
+    text-decoration: underline;
+}
+
+
+/* Section Styles */
+.container {
+    padding: 60px 20px;
+    text-align: center;
+   margin-top: -50px;
+    margin-bottom: -50px;
+}
+
+
+
+
+/* Space below navbar */
+body {
+    margin-top: 60px;
+}
+
+.about.container {
+    padding: 100px 20px;
+    text-align: center;
+    
+}
+
+footer {
+    text-align: center; /* Center align text in the footer */
+    padding: 20px; /* Adds some padding inside the footer */
+    background-color: hwb(89 69% 13%); /* Optional: Add a background color */
+    position: relative; /* Ensures it stays at the bottom of the content */
+    margin-top: 20px; /* Adds some space above the footer */
+    color: #777; /* Optional: Set footer text color */
+}
+
